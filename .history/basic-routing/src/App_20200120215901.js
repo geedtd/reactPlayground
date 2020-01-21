@@ -28,7 +28,10 @@ function App() {
           {/* <Link to='/contact'>Contact</Link> */}
 
           <Route exact path='/' component={Home} />
-          <Route path='/blog' component={Blog} />
+          <Route path='/blog' render={(props) => {
+            return <h1>The Blog!</h1>} 
+          }
+          />
           {/* <Route path='/contact' component={Contact} /> */}
         </Router>        
       </header>

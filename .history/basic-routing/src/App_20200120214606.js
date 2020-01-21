@@ -7,11 +7,7 @@ function Home(props) {
   return <h1>Home Component</h1>
 }
 function Blog(props) {
-  const { push } = props.history;
-  return <>
-    <h1>My blog nobody reads</h1>
-    <button onClick={() => push("/")}>back home</button>
-  </>
+  return <h1>My blog nobody reads</h1>
 }
 
 // function Contact(props) {
